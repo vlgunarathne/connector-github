@@ -8,7 +8,7 @@ public function main (string[] args) {
     endpoint<github:GithubConnector> githubConnector {
         create github:GithubConnector(getAccessToken());
     }
-    io:println("Starting ...");
+    io:println("Starting samples...");
 
     http:InResponse gitResponse = {};
     github:GitConnectorError e;
